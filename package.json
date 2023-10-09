@@ -1,0 +1,19 @@
+{
+  "name": "wajxp",
+  "version": "1.0.0",
+  "description": "Multifunctional whatsapp bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "wajxp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "github:WhiskeySockets/Baileys",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
