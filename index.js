@@ -31,22 +31,22 @@ async function wajxp() {
     }else if (reason === DisconnectReason.connectionLost) {
       console.log(c.blue("Connection Lost from Server!, Reconnecting..."));
       wajxp();
-      } else if (reason === DisconnectReason.connectionReplaced) {
-        console.log(c.green("Connection Replaced!, Another Session Opened, Please Close Current Session"));
-        zyn.logout();
-      }else if (reason === DisconnectReason.loggedOut) {
-        console.log(c.red(`Device Logged Out, Please Delete  '${sessionFile}'  and Scan Again.`));
-        zyn.logout();
-      } else if (reason === DisconnectReason.restartRequired) {
-        console.log(c.green("Restart Required, Restarting..."));
-        wajxp();
-      } else if (reason === DisconnectReason.timedOut) {
-        console.log(c.red("Connection TimedOut,") + c.green(" Reconnecting..."));
-        wajxp();
-      } else {
-        zyn.end(c.red(`DisconnectReason: ${reason}|${lastDisconnect.error}`));
-      }}
-    })
+    } else if (reason === DisconnectReason.connectionReplaced) {
+      console.log(c.green("Connection Replaced!, Another Session Opened, Please Close Current Session"));
+      zyn.logout();
+    }else if (reason === DisconnectReason.loggedOut) {
+      console.log(c.red(`Device Logged Out, Please Delete  '${sessionFile}'  and Scan Again.`));
+      zyn.logout();
+    } else if (reason === DisconnectReason.restartRequired) {
+      console.log(c.green("Restart Required, Restarting..."));
+      wajxp();
+    } else if (reason === DisconnectReason.timedOut) {
+      console.log(c.red("Connection TimedOut,") + c.green(" Reconnecting..."));
+      wajxp();
+    } else {
+      zyn.end(c.red(`DisconnectReason: ${reason}|${lastDisconnect.error}`));
+    }}
+  })
 
     const reply = (msg) => {
       zyn.sendMessage(id, { text: msg }, { quoted: q })
