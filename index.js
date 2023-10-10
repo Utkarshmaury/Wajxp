@@ -47,13 +47,13 @@ async function wajxp() {
     })
 
     const reply = (msg) => {
-        zyn.sendMessage(id, { text: msg }, { quoted: q })
+      zyn.sendMessage(id, { text: msg }, { quoted: q })
     }
     const message = (msg) => {
-        zyn.sendMessage(id, {text: msg})
+      zyn.sendMessage(id, {text: msg})
     }
     const read = ()=>{
-        zyn.readMessages([q.key])
+      zyn.readMessages([q.key])
     }
 
     
