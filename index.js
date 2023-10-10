@@ -1,7 +1,7 @@
 const {default:makeWASocket,
 AnyMessageContent,delay, 
 DisconnectReason, fetchLatestBaileysVersion, getAggregateVotesInPollMessage, 
-makeCacheableSignalKeyStore, makeInMemoryStore, PHONENUMBER_MCC,proto, useMultiFileAuthState, 
+makeCacheableSignalKeyStore, makeInMemoryStore,proto, useMultiFileAuthState, 
 WAMessageContent, WAMessageKey, Mimetype, MessageType, MessageOptions} = require('@whiskeysockets/baileys')
 let { Boom } = require("@hapi/boom")
 const c = require('ansi-colors')
