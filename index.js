@@ -42,7 +42,7 @@ async function wajxp() {
           console.log(c.red("Connection TimedOut,") + c.green(" Reconnecting..."));
           wajxp();
         } else {
-           zyn.end(c.red(`DisconnectReason: ${reason}|${lastDisconnect.error}`));
+          zyn.end(c.red(`DisconnectReason: ${reason}|${lastDisconnect.error}`));
         }}
     })
 
