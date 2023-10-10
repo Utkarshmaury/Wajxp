@@ -48,15 +48,15 @@ async function wajxp() {
     }}
   })
 
-    const reply = (msg) => {
-      zyn.sendMessage(id, { text: msg }, { quoted: q })
-    }
-    const message = (msg) => {
-      zyn.sendMessage(id, {text: msg})
-    }
-    const read = ()=>{
-      zyn.readMessages([q.key])
-    }
+  // const reply = (msg) => {
+  //   zyn.sendMessage(id, { text: msg }, { quoted: q })
+  // }
+  // const message = (msg) => {
+  //   zyn.sendMessage(id, {text: msg})
+  // }
+  // const read = ()=>{
+  //   zyn.readMessages([q.key])
+  // }
 
     
 
