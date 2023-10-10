@@ -10,7 +10,6 @@ const c = require('ansi-colors')
 async function wajxp() {
     const zyn = makeWASocket({
       printQRInTerminal: true,
-      auth: state,
     })
 
     zyn.ev.on('connection.update' , async(tex) => {
