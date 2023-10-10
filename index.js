@@ -6,7 +6,7 @@ WAMessageContent, WAMessageKey, Mimetype, MessageType, MessageOptions} = require
 let { Boom } = require("@hapi/boom")
 const c = require('ansi-colors')
 
-
+const sessionFile = './session.json'
 async function wajxp() {
   const { state, saveCreds } = await useMultiFileAuthState(sessionFile)
   const zyn = makeWASocket({
